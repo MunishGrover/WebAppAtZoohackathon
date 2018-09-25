@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cites</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Lato|Lobster|Oswald|Roboto+Slab|Roboto:300i,400,400i" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cites.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navigation sticky-top">
+    <a href="index.html" class="navbar-brand">
+        <img src="wwf.png" width="150px" height="65px" alt="place logo here">
+    </a>
+</nav>
+<section class="intro">
+    <h1 class="myl">CITES and national regulations &darr;</h1>
+</section>
+
+<section class="timeline">
+    <ul>
+        <li>
+            <div>
+                <time>Appendix1</time> Appendix I includes species threatened with extinction. Trade in specimens of these species is permitted only in exceptional circumstances.
+            </div>
+        </li>
+        <li>
+            <div>
+                <time></time> The Conference of the Parties (CoP), which is the supreme decision-making body of the Convention and comprises all its Parties, has agreed in Resolution Conf. 9.24 (Rev. CoP17) on a set of biological and trade criteria to help determine whether a species should be included in Appendices I or II.
+            </div>
+        </li>
+        <li>
+            <div>
+                <time></time> Appendix II includes species not necessarily threatened with extinction, but in which trade must be controlled in order to avoid utilization incompatible with their survival.
+            </div>
+        </li>
+        <li>
+            <div>
+                <time></time>A specimen of a CITES-listed species may be imported into or exported (or re-exported) from a State party to the Convention only if the appropriate document has been obtained and presented for clearance at the port of entry or exit..
+            </div>
+        </li>
+        <li>
+            <div>
+                <time>Appendix II </time> An import permit issued by the Management Authority of the State of import is required. This may be issued only if the specimen is not to be used for primarily commercial purposes and if the import will be for purposes that are not detrimental to the survival of the species. In the case of a live animal or plant, the Scientific Authority must be satisfied that the proposed recipient is suitably equipped to house and care for it..
+            </div>
+        </li>
+        <li>
+            <div>
+                <time></time> An export permit or re-export certificate issued by the Management Authority of the State of export or re-export is required.
+            </div>
+        </li>
+        <li>
+            <div>
+                <time></time>
+                An export permit may be issued only if the specimen was legally obtained and if the export will not be detrimental to the survival of the species..
+            </div>
+        </li>
+        <li>
+            <div>
+                <time></time> In the case of a live animal or plant, it must be prepared and shipped to minimize any risk of injury, damage to health or cruel treatment.
+            </div>
+        </li>
+        <li>
+            <div>
+                <time>AppendixII</time> An export permit or re-export certificate issued by the Management Authority of the State of export or re-export is also required.
+                An export permit may be issued only if the specimen was legally obtained; the trade will not be detrimental to the survival of the species; and an import permit has already been issued..
+            </div>
+        </li>
+        <li>
+            <div>
+                <time></time> No import permit is needed unless required by national law.     </div>
+        </li>
+        <li>
+            <div>
+                <time>AppendixIII</time>In the case of a live animal or plant, it must be prepared and shipped to minimize any risk of injury, damage to health or cruel treatment. .
+            </div>
+        </li>
+        <li>
+            <div>
+                <time></time> In the case of trade from a State that included the species in Appendix III, an export permit issued by the Management Authority of that State is required. This may be issued only if the specimen was legally obtained and, in the case of a live animal or plant, if it will be prepared and shipped to minimize any risk of injury, damage to health or cruel treatment..
+            </div>
+        </li>
+    </ul>
+</section>
+
+</body>
+<script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+<script>
+    (function() {
+
+    'use strict';
+
+    // define variables
+    var items = document.querySelectorAll(".timeline li");
+
+    // check if an element is in viewport
+    // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
+                                                 function isElementInViewport(el) {
+        var rect = el.getBoundingClientRect();
+        return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+    }
+
+    function callbackFunc() {
+        for (var i = 0; i < items.length; i++) {
+    if (isElementInViewport(items[i])) {
+        items[i].classList.add("in-view");
+    }
+    }
+    }
+
+    // listen for events
+       window.addEventListener("load", callbackFunc);
+    window.addEventListener("resize", callbackFunc);
+    window.addEventListener("scroll", callbackFunc);
+
+    })();
+</script>
+</html>

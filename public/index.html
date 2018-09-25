@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- Bootstrap CSS -->
+     <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Lato|Lobster|Oswald|Roboto+Slab|Roboto:300i,400,400i" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navigation sticky-top">
+        <a class="navbar-brand">
+            <img src="wwf.png" width="150px" height="65px" alt="place logo here">
+        </a>
+        <button class="navbar-toggler " data-toggle="collapse" data-target="#collapse_target">
+            <span class="navbar-toggler-icon"><i class="fa fa-navicon"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapse_target">               
+            <ul class="navbar-nav ml-auto">
+               <li class="nav-item">
+                <a href="" class="btn btn-danger btn-rounded my-3" data-toggle="modal" data-target="#modalLRForm">Login/Sign Up</a>
+               </li> 
+            </ul>
+        </div>
+    </nav>
+      <!--Modal: Login / Register Form-->
+      <div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog cascading-modal" role="document">
+            <!--Content-->
+            <div class="modal-content">
+    
+                <!--Modal cascading tabs-->
+                <div class="modal-c-tabs">
+    
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs md-tabs tabs-2 light-blue darken-3" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i class="fa fa-user mr-1"></i>Purchaser</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#panel8" role="tab"><i class="fa fa-user-plus mr-1"></i>Seller</a>
+                        </li>
+                    </ul>
+    
+                    <!-- Tab panels -->
+                    <div class="tab-content">
+                        <!--Panel 7-->
+                        <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
+    
+                            <!--Body-->
+                            <div class="modal-body mb-1">
+                                <div class="md-form form-sm mb-5">
+                                    <i class="fa fa-envelope prefix"></i>
+                                    <input type="email" id="modalLRInput10" class="form-control form-control-sm validate">
+                                    <label data-error="wrong" data-success="right" for="modalLRInput10">Your email</label>
+                                </div>
+    
+                                <div class="md-form form-sm mb-4">
+                                    <i class="fa fa-lock prefix"></i>
+                                    <input type="password" id="modalLRInput11" class="form-control form-control-sm validate">
+                                    <label data-error="wrong" data-success="right" for="modalLRInput11">Your password</label>
+                                </div>
+                                <div class="text-center mt-2">
+                                    <button class="btn btn-info">Log in <i class="fa fa-sign-in ml-1"></i></button>
+                                </div>
+                            </div>
+                            <!--Footer-->
+                            <div class="modal-footer">
+                                <div class="options text-center text-md-right mt-1">
+                                    <p>Not a member? <a href="#" class="blue-text">Sign Up</a></p>
+                                    <p>Forgot <a href="#" class="blue-text">Password?</a></p>
+                                </div>
+                                <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
+                            </div>
+    
+                        </div>
+                        <!--/.Panel 7-->
+    
+                        <!--Panel 8-->
+                        <div class="tab-pane fade" id="panel8" role="tabpanel">
+    
+                            <!--Body-->
+                            <div class="modal-body">
+
+    
+                                <div class="text-center form-sm mt-2">
+                                    <button onclick="location.href='signUp.html'" class="btn btn-info">Sign up <i class="fa fa-sign-in ml-1"></i></button>
+                                </div>
+    
+                            </div>
+                            <!--Footer-->
+                            <div class="modal-footer">
+                                <div class="options text-right">
+                                    <p class="pt-1">Already have an account? <a href="#" class="blue-text">Log In</a></p>
+                                </div>
+                                <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        <!--/.Panel 8-->
+                    </div>
+    
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+   <div class="hello"><h3 class="myline">Our website helps to find legal selling of products nearbuy and reporting illegal product trading.</h3></div>
+    <img src="scroll-down-1.gif" height="220px"  class="myscroll" >
+    <div class="temp">
+        <div class="container">
+         <div class="row">
+             <div class="col-lg-4 col-md-4 col-sm-3 col-xs-3">
+                 <div class="fall-item fall-effect">
+                     <img src="img/e8554.jpg"/>
+                     <div class="mask">
+                         <h2>CITES</h2>
+                         <p>CITES is an international agreement between governments. Its aim is to ensure that international trade in specimens of wild animals and plants does not threaten their survival.</p>
+                         <a href="cites.html" class="btn btn-danger">Read More</a>
+                     </div>
+                 </div>
+             </div>
+             <div class="col-lg-4 col-md-4 col-sm-3 col-xs-3">
+                 <div class="fall-item fall-effect">
+                     <img src="img/monglawildlife11-0.jpg"/>
+                     <div class="mask">
+                         <h2>Products</h2>
+                         <p>Find out the products which are legal for trading and which are not legal.</p>
+                         <a href="#" class="btn btn-danger">Read More</a>
+                     </div>
+                 </div>
+             </div>
+             <div class="col-lg-4 col-md-4 col-sm-3 col-xs-3">
+                 <div class="fall-item fall-effect">
+                     <img src="img/photo-1439886183900-e79ec0057170.jpeg"/>
+                     <div class="mask">
+                         <h2>Species Near Me</h2>
+                         <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+                         <a href="map.html" class="btn btn-danger">Show Me</a>
+                     </div>
+                 </div>
+
+             </div>
+         </div>
+            <div class="row">
+                <div class="col-lg-4 hover-mask hey" onclick="location.href='layout.html'">
+                    <a href="#" title="" style="border: 1px solid black; border-top-right-radius: 3%;border-top-left-radius: 3%;border-bottom-left-radius: 3%; border-bottom-right-radius: 3%;">
+                        <img src="img/photo-1501812215031-48016ad31549.jpeg"/>
+                        <h2><span class="glyphicon glyphicon-search">Search Sellers</span></h2>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+<!-- SCRIPTS -->
+<!-- JQuery -->
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
+</body>
+</html>
